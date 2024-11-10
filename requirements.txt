@@ -1,0 +1,36 @@
+fastapi
+uvicorn
+httpx
+faiss-cpu
+pytesseract
+numpy
+pillow
+python-docx
+python-pptx
+pdf2image
+tiktoken
+python-dotenv
+textract==1.6.3
+jinja2
+
+
+
+conda install numpy
+conda install httpx
+conda install pytesseract
+conda install -c pytorch faiss-cpu
+pip install textract==1.6.3
+pip install fastapi
+pip install python-dotenv
+pip install pdf2image
+pip install tiktoken nltk
+pip install --upgrade --quiet llama-index-embeddings-nvidia
+pip install openai
+pip install jinja2
+pip install python-multipart
+pip install uvicorn standard 
+pip install websockets
+pip install striprtf
+pip install groq
+pip install pydub
+pip install sounddevice
