@@ -125,7 +125,7 @@ Combined Installation
 Alternatively, you can perform all installations sequentially:
 
 # Clone the repository
-git clone https://github.com/your-repo/document-processing-app.git
+git clone https://github.com/AdamQuantum/NVIDIA-Developer-Contest-2024
 cd document-processing-app
 
 # Create and activate conda environment
