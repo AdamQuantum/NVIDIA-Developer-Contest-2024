@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Real-Time Multimodal RAG</title>
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <!-- Custom Font -->
+    <link href="https://db.onlinewebfonts.com/c/0483b4eeaaefc7b81986e43702c7900d?family=Prototype" rel="stylesheet" type="text/css"/>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Global Styles */
+        html, body {
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            background-color: #181818 !important; /* Background */
+            font-family: "Prototype", Arial, sans-serif !important; /* Custom font */
+            color: #E0E0E0 !important; /* Text color */
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #000000 !important;
+            padding: 15px 20px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important;
+            position: sticky !important;
+            top: 0 !important;
+            z-index: 1000 !important;
+        }
+
+        header .logo {
+            color: #79B939 !important;
+            font-size: 1.4em !important;
+            font-weight: bold !important;
+            display: flex !important;
+            align-items: center !important;
+            position: absolute !important;
+            left: 20px !important;
+        }
+
+        header .logo img {
+            height: 50px !important;
+            margin-right: 10px !important;
+        }
+
+        header nav {
+            display: flex !important;
+            gap: 20px !important;
+        }
+
+        header nav a {
+            color: #E0E0E0 !important;
+            text-decoration: none !important;
+            font-weight: 500 !important;
+            transition: color 0.3s !important;
+            font-size: 1.2em !important;
+        }
+
+        header nav a:hover {
+            color: #79B939 !important;
+        }
+
+        /* Main Container Styling */
+        .container {
+            max-width: 1200px !important;
+            margin: 20px auto !important;
+            padding: 20px !important;
+            display: flex !important;
+            flex-direction: column !important;
+            flex: 1 0 auto !important;
+            justify-content: center !important;
+            align-items: center !important;
+            text-align: center !important;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center !important;
+            padding: 20px !important;
+            background-color: rgba(14, 14, 14, 0.6) !important;
+            backdrop-filter: blur(15px) !important;
+            -webkit-backdrop-filter: blur(15px) !important;
+            border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
+            color: #B0B0B0 !important;
+        }
+
+        /* Contact Content Styling */
+        .contact-content {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            justify-content: center !important;
+            gap: 20px !important;
+        }
+
+        /* Email Link Styling */
+        .contact-content a {
+            color: #79B939 !important;
+            text-decoration: none !important;
+            font-size: 1.2em !important;
+            transition: color 0.3s !important;
+        }
+
+        .contact-content a:hover {
+            color: #5fa600 !important;
+        }
+
+        /* Custom LinkedIn Badge Styling */
+        .custom-linkedin-badge {
+            display: inline-block;
+            border: 1px solid #0077b5;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #0077b5;
+        }
+
+        .custom-linkedin-badge a {
+            color: white;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+        }
+
+        .custom-linkedin-badge img {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="https://s3.amazonaws.com/cms.ipressroom.com/219/files/20224/62756943b3aed35505d6503f_NVIDIA-logo-BL/NVIDIA-logo-BL_5cdf5705-821f-4c4c-9c14-371e4d10457d-prv.jpg" alt="NVIDIA Logo"> <!-- Replace with actual NVIDIA logo URL -->
+            NVIDIA Developer Contest 2024
+        </div>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        <div class="contact-content">
+            <!-- Custom LinkedIn Badge -->
+            <div class="custom-linkedin-badge">
+                <a href="https://www.linkedin.com/in/adam-martin-quantum" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+                    Adam M.
+                </a>
+            </div>
+
+            <!-- Email Address -->
+            <div>
+                <a href="mailto:adam.martin@email.com">adam.martin@email.com</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Adam Martin
+    </footer>
+</body>
+</html>
