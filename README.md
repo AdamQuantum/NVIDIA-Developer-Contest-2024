@@ -401,7 +401,7 @@ This project is licensed under the MIT License.
 Contact
 
 For any questions or support, please contact:
-	•	Email: support@yourdomain.com
-	•	GitHub: https://github.com/your-repo
+	•	Email: adam.martin@email.com
+	•	GitHub: https://github.com/AdamQuantum
 
 End of README.md
