@@ -6,6 +6,9 @@ Table of Contents
 	2.	Features
 	3.	Prerequisites
 	4.	Installation
+	•	Using Conda
+	•	Using Pip
+	•	Combined Installation
 	5.	Configuration
 	6.	Directory Structure
 	7.	Usage
@@ -55,6 +58,7 @@ Features
 Prerequisites
 
 	•	Python: Version 3.8 or higher
+	•	Conda: Recommended for managing dependencies and environments
 	•	API Keys:
 	•	NVIDIA API Keys for Embedding and Llama models
 	•	Groq API Key
@@ -64,21 +68,90 @@ Prerequisites
 
 Installation
 
+There are multiple ways to install the required dependencies for this application. You can choose between using Conda, Pip, or a combination of both.
+
+Using Conda
+
 	1.	Clone the Repository
 
 git clone https://github.com/your-repo/document-processing-app.git
 cd document-processing-app
 
 
-	2.	Create a Virtual Environment
+	2.	Create a Conda Environment
 
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+conda create -n doc_qna_env python=3.9
+conda activate doc_qna_env
 
 
-	3.	Install Dependencies
+	3.	Install Conda Packages
+
+conda install numpy
+conda install httpx
+conda install pytesseract
+conda install -c pytorch faiss-cpu
+
+
+
+Using Pip
+
+	1.	Ensure the Conda Environment is Activated
+
+conda activate doc_qna_env
+
+
+	2.	Install Pip Packages
 
 pip install -r requirements.txt
+
+
+	3.	Install Additional Pip Packages
+
+pip install nltk
+pip install llama-index-embeddings-nvidia --upgrade --quiet
+pip install openai
+pip install python-multipart
+pip install uvicorn[standard]
+pip install websockets
+pip install striprtf
+pip install groq
+pip install pydub
+pip install sounddevice
+
+
+
+Combined Installation
+
+Alternatively, you can perform all installations sequentially:
+
+# Clone the repository
+git clone https://github.com/your-repo/document-processing-app.git
+cd document-processing-app
+
+# Create and activate conda environment
+conda create -n doc_qna_env python=3.9
+conda activate doc_qna_env
+
+# Install conda packages
+conda install numpy
+conda install httpx
+conda install pytesseract
+conda install -c pytorch faiss-cpu
+
+# Install pip packages from requirements.txt
+pip install -r requirements.txt
+
+# Install additional pip packages
+pip install nltk
+pip install llama-index-embeddings-nvidia --upgrade --quiet
+pip install openai
+pip install python-multipart
+pip install uvicorn[standard]
+pip install websockets
+pip install striprtf
+pip install groq
+pip install pydub
+pip install sounddevice
 
 Ensure that ffmpeg is installed on your system. On Ubuntu, you can install it using:
 
@@ -369,30 +442,39 @@ The application utilizes a wide range of Python packages and external tools:
 	•	Python Packages:
 	•	fastapi: Web framework for building APIs.
 	•	uvicorn: ASGI server for running FastAPI applications.
-	•	pytesseract: OCR tool for text extraction from images.
-	•	textract: Library for extracting text from various document formats.
-	•	tiktoken: Tokenizer for splitting text into tokens.
-	•	nltk: Natural Language Toolkit for text processing.
-	•	numpy: Numerical computing library.
-	•	pydantic: Data validation and settings management.
 	•	httpx: Asynchronous HTTP client.
+	•	faiss-cpu: Library for efficient similarity search and clustering of dense vectors.
+	•	pytesseract: OCR tool for text extraction from images.
+	•	numpy: Numerical computing library.
+	•	pillow: Image processing library.
+	•	python-docx: Library for creating and updating Microsoft Word (.docx) files.
+	•	python-pptx: Library for creating and updating PowerPoint (.pptx) files.
 	•	pdf2image: Converts PDF pages to images.
-	•	Pillow (PIL): Image processing library.
-	•	python-pptx: Library for creating and updating PowerPoint files.
-	•	sounddevice: Audio playback and recording.
-	•	pydub: Audio manipulation library.
+	•	tiktoken: Tokenizer for splitting text into tokens.
+	•	python-dotenv: Loads environment variables from a .env file.
+	•	textract==1.6.3: Library for extracting text from various document formats.
+	•	jinja2: Templating engine for Python.
+	•	nltk: Natural Language Toolkit for text processing.
+	•	llama-index-embeddings-nvidia: NVIDIA’s custom embedding models for llama_index.
+	•	openai: OpenAI API client.
+	•	python-multipart: Parses multipart/form-data which is primarily used for uploading files.
+	•	websockets: WebSocket client and server library.
 	•	striprtf: Library for stripping RTF formatting.
 	•	groq: Groq API client for accessing their services.
-	•	llama_index: Library for indexing and retrieving documents.
-	•	dotenv: Loads environment variables from a .env file.
+	•	pydub: Audio manipulation library.
+	•	sounddevice: Audio playback and recording.
 	•	External Tools:
 	•	ffmpeg: Required for audio processing with pydub.
 
 Installation Example:
 
-pip install fastapi uvicorn pytesseract textract tiktoken nltk numpy httpx pdf2image Pillow python-pptx sounddevice pydub striprtf groq llama_index python-dotenv
+pip install fastapi uvicorn httpx faiss-cpu pytesseract numpy pillow python-docx python-pptx pdf2image tiktoken python-dotenv textract==1.6.3 jinja2 nltk llama-index-embeddings-nvidia openai python-multipart websockets striprtf groq pydub sounddevice
 
-Note: Ensure ffmpeg is installed on your system.
+Note: Ensure ffmpeg is installed on your system. On Ubuntu, you can install it using:
+
+sudo apt-get install ffmpeg
+
+For other operating systems, refer to the FFmpeg installation guide.
 
 License
 
