@@ -476,14 +476,20 @@ sudo apt-get install ffmpeg
 
 For other operating systems, refer to the FFmpeg installation guide.
 
-License
+## License
 
-This project is licensed under the MIT License.
+All rights reserved. 
+
+This code is proprietary and intended for personal or organizational use only. No part of this project may be reproduced, distributed, or transmitted in any form or by any means, without the prior written permission of the author.
+
+For inquiries about usage rights, please contact: adam.martin@email.com.
 
 Contact
 
 For any questions or support, please contact:
 	•	Email: adam.martin@email.com
 	•	GitHub: https://github.com/AdamQuantum
+
+Copyright © 2024 Adam Martin. All rights reserved.
 
 End of README.md
