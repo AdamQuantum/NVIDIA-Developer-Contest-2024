@@ -37,8 +37,8 @@ Table of Contents
 	11.	Environment Variables
 	12.	Audio File Limitations
 	13.	Dependencies
-	14.	License
-	15.	Contact
+	14.	Contact
+	15.	License
 
 Overview
 
