@@ -491,5 +491,3 @@ For any questions or support, please contact:
 	•	GitHub: https://github.com/AdamQuantum
 
 Copyright © 2024 Adam Martin. All rights reserved.
-
-End of README.md
