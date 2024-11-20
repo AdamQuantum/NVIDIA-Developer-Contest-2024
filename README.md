@@ -470,12 +470,6 @@ Installation Example:
 
 pip install fastapi uvicorn httpx faiss-cpu pytesseract numpy pillow python-docx python-pptx pdf2image tiktoken python-dotenv textract==1.6.3 jinja2 nltk llama-index-embeddings-nvidia openai python-multipart websockets striprtf groq pydub sounddevice
 
-LICENSE:
-Copyright © 2024 Adam Martin. All rights reserved.
-
-This software and associated documentation files (the "Software") are proprietary and may not be used, copied, modified, merged, published, distributed, sublicensed, or sold without prior written permission from the copyright holder.
-
-For inquiries about permissions or licensing, please contact adam.martin@email.com
 
 Note: Ensure ffmpeg is installed on your system. On Ubuntu, you can install it using:
 
@@ -483,18 +477,16 @@ sudo apt-get install ffmpeg
 
 For other operating systems, refer to the FFmpeg installation guide.
 
-## License
-
-All rights reserved. 
-
-This code is proprietary and intended for personal or organizational use only. No part of this project may be reproduced, distributed, or transmitted in any form or by any means, without the prior written permission of the author.
-
-For inquiries about usage rights, please contact: adam.martin@email.com.
-
 Contact
 
 For any questions or support, please contact:
 	•	Email: adam.martin@email.com
 	•	GitHub: https://github.com/AdamQuantum
+
+## License 
+
+This software and associated documentation files (the "Software") are proprietary and may not be used, copied, modified, merged, published, distributed, sublicensed, or sold without prior written permission from the copyright holder.
+
+For inquiries about permissions or licensing, please contact adam.martin@email.com
 
 Copyright © 2024 Adam Martin. All rights reserved.
